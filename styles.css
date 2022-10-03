@@ -1,0 +1,78 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    
+}
+
+.suv, .sedan, .luxury{
+    padding: 20px 50px;
+    color: hsla(0, 0%, 100%, 0.75) ;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+img{
+    margin-top: 20px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+
+}
+
+.sedan-btn{
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+}
+
+.suv-btn{
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+}
+.luxury-btn{
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+}
+
+@media (min-width:420px){
+    body{
+        width: 1100px;
+    }
+
+    .container{
+        max-width: 900px;
+        flex-direction: row;
+        height: 400px;
+        margin: 200px auto;
+    }
+}
